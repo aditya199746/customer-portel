@@ -1,0 +1,59 @@
+{
+  "name": "mf-transaction-history",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/bootstrap.tsx",
+"type": "module",
+  "dependencies": {
+    "@apollo/client": "^3.13.8",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.126",
+    "event-bus": "^1.0.0",
+    "graphql": "^16.11.0",
+    "react-scripts": "5.0.1",
+    "ui-kit": "^1.0.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build": "webpack --config webpack.config.cjs --mode production",
+  "start": "webpack serve --config webpack.config.cjs --mode development",
+  "dev": "npm run start"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@babel/preset-react": "^7.27.1",
+    "@babel/preset-typescript": "^7.27.1",
+    "babel-loader": "^8.4.1",
+    "html-webpack-plugin": "^5.6.3",
+    "ts-loader": "^9.5.2",
+    "typescript": "^4.9.5",
+    "webpack": "^5.100.2",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^4.15.2"
+  }
+}
