@@ -1,0 +1,7 @@
+{
+  "expo": {
+    "name": "HostNativeNew",
+    "slug": "host-native-new",
+    "entryPoint": "src/index.ts"
+  }
+}
