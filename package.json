@@ -1,0 +1,73 @@
+{
+  "name": "customer-portal",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "npm@10.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "server"
+  ],
+  "scripts": {
+    "bootstrap": "npm install",
+    "dev:api": "npm run -w server start",
+    "dev:mf1": "npm run -w apps/mf-account-overview start",
+    "dev:mf2": "npm run -w apps/mf-transaction-history start",
+    "dev:host-web": "npm run -w apps/host-web start",
+    "dev:host-native": "npm run -w apps/host-native start",
+    "dev:host-native-new": "webpack serve --config apps/host-native-new/webpack.mobile.config.mjs --mode development",
+    "dev:host-native-viewer": "npm run -w apps/host-native-viewer start",
+    "dev:all": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "postinstall": "npm run build"
+  },
+  "overrides": {
+    "metro": "0.82.5",
+    "metro-config": "0.82.5",
+    "metro-core": "0.82.5",
+    "@expo/metro-config": "0.17.6",
+    "@expo/cli": "0.17.8"
+  },
+  "dependencies": {
+    "@apollo/client": "3.8.8",
+    "expo": "50.0.21",
+    "graphql": "16.8.1",
+    "graphql-tag": "2.12.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "0.73.0",
+    "react-native-web": "~0.19.10",
+    "react-native-worklets": "0.4.0",
+    "rehackt": "^0.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@callstack/repack": "^5.1.3",
+    "@expo/config": "~8.5.0",
+    "@expo/metro-config": "0.17.6",
+    "@expo/webpack-config": "~19.0.1",
+    "@types/node": "^18.15.13",
+    "@types/react": "~18.2.14",
+    "@types/react-dom": "~18.2.7",
+    "@types/react-native": "~0.73.0",
+    "@types/react-native-web": "~0.19.0",
+    "ajv": "^8.12.0",
+    "ajv-keywords": "^5.1.0",
+    "assert": "^2.1.0",
+    "babel-loader": "^9.0.0",
+    "babel-plugin-react-native-web": "~0.21.0",
+    "babel-preset-expo": "~10.0.0",
+    "buffer": "^6.0.3",
+    "cross-env": "^7.0.3",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0",
+    "ts-loader": "^9.4.3",
+    "turbo": "^1.10.7",
+    "typescript": "^5.1.3",
+    "util": "^0.12.5"
+  }
+}

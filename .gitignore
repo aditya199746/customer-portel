@@ -1,0 +1,93 @@
+# Node modules
+node_modules/
+**/node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Output directories
+dist/
+build/
+public/build/
+coverage/
+storybook-static/
+web-build/
+
+# Expo & Metro
+.expo/
+.expo-shared/
+web-report/
+web-debug/
+debug/
+ios/build/
+android/build/
+*.keystore
+*.jks
+
+# React Native
+*.apk
+*.aar
+android/.gradle/
+android/.idea/
+ios/Pods/
+ios/.DS_Store
+ios/*.xcodeproj/xcuserdata/
+ios/*.xcworkspace/xcuserdata/
+ios/build/
+ios/DerivedData/
+
+# Monorepo tooling (Turborepo, pnpm)
+turbo/node_modules/
+.pnpm-debug.log
+.pnpm-store/
+.pnp.*
+
+# Next.js (if any)
+.next/
+
+# Vercel/Netlify/other deploy outputs
+.vercel/
+.netlify/
+
+# IDEs
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Tests
+coverage/
+.nyc_output/
+
+# Expo generated
+.expo/
+.expo-shared/assets/
+.expo-shared/README.md
+
+# Lint cache
+.eslintcache
+.prettiercache
+
+# Misc
+*.bak
+*.swp
+*.tmp
+*.tgz
+yarn-error.log
+*.lock
