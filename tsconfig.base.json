@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "ui-kit": ["packages/ui-kit/src"],
+      "event-bus": ["packages/event-bus/index.ts"]
+    },
+    "target": "es6",
+    "moduleResolution": "node",
+    "module": "esnext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  }
+}
