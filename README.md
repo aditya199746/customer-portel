@@ -27,10 +27,10 @@ customer-portal/
 ├── apps/
 │   ├── host-web/              # Web Host Container (MF loader)
 │   ├── host-native-viewer/    # Mobile Host (Expo + WebView)
-│
-├── packages/
 │   ├── mf-account-overview/   # MF1 - Account Overview
 │   ├── mf-transaction-history/ # MF2 - Transaction History
+│
+├── packages/
 │   ├── ui-kit/                # Shared UI Components
 │   ├── event-bus/             # PubSub for MF communication
 │
@@ -50,6 +50,7 @@ git clone <your-repo-url> customer-portal
 cd customer-portal
 npm install
 npm run build --filter=packages/ui-kit
+npm run build --filter=packages/event-bus
 ```
 
 ---
